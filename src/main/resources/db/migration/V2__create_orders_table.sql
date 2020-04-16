@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY ,
+    order_date datetime default CURRENT_TIMESTAMP,
+    price DECIMAL(7,2) NOT NULL
+);

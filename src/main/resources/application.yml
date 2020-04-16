@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:shop_h2
+    username: shop_admin
+    password:
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
